@@ -6,7 +6,7 @@ export const Share = () => {
     <div className="shareContainer" >
         <div className="shareWrapper" >
             <div className="shareTop" >
-                <img className="shareProfileImg" src="/assets/4.jpeg" alt="" />
+                <img className="shareProfileImg" src="/assets/5.jpeg" alt="" />
                 <input placeholder="what's in your mind ?" className="shareInput" />
             </div>
             <hr className="shareHr" />

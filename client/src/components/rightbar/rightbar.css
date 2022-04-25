@@ -2,3 +2,39 @@
     flex: 3;
     height: calc(100vh - 50px);
 }
+
+.rightbarWrapper {
+    padding: 20px 20px 0 0 ;
+}
+
+.birthdayContainer {
+    display: flex;
+    align-items: center;
+}
+
+.birthdayIcon {
+    margin-right: 10px;
+    color: #F94892
+}
+
+.birthdayText{
+    font-weight: 300;
+}
+.rightabAd{
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.rightbarTitle {
+    margin: 16px 0;
+    background-color:  var(--secondary-bg-color);
+    padding: 5%;
+    color: white;
+}
+
+.rightbarFriendList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

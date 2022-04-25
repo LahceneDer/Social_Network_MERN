@@ -1,0 +1,18 @@
+
+.sidebarFriend{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-left: 1px solid var(--secondary-bg-color); 
+    cursor: pointer;
+}
+
+.sidebarFriendImg{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    /* border: 3px solid var(--main-bg-color) */
+}
