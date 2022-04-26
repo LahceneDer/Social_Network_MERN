@@ -12,7 +12,9 @@
 .topbarLeft {
     flex:3
 }
-.topbarLeft .logo {
+.topbarLeft .logo .Link {
+    display: flex;
+    align-items: center;
     margin-left: 20px;
     color: white;
     display: flex;

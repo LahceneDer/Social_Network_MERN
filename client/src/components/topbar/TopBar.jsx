@@ -1,13 +1,16 @@
 import "./topbar.css"
 import {Search, MeetingRoom, Person, Chat, Notifications, AccountBox} from '@material-ui/icons';
+import { Link } from "react-router-dom"
 
 export const TopBar = () => {
   return (
     <div className="topbarContainer" >
         <div className="topbarLeft" >
             <div className="logo" > 
-                <span> <MeetingRoom />  </span>
-                <span>  LR Social </span>
+                <Link to="/" className="Link" style={{ textDecoration: "none"}} >
+                    <span> <MeetingRoom />  </span>
+                    <span>  LR Social </span>
+                </Link>
             </div>
         </div>
         <div className="topbarCenter" >

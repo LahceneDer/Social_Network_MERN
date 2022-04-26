@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
+const cors = require("cors");
 const helmet = require("helmet");
 const morgan = require("morgan");
 const userRouter = require("./routes/users")
@@ -24,6 +25,7 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 // middleware
 app.use(express.json());
 app.use(helmet());
+app.use(cors());
 app.use(morgan("common"));
 
 app.use("/api/users",userRouter)
@@ -34,6 +36,6 @@ app.use("/", (req, res, next) => {
   res.send("hello");
 });
 
-app.listen(3000, () => {
-  console.log("backend server is running on 3000");
+app.listen(5000, () => {
+  console.log("backend server is running on 5000");
 });

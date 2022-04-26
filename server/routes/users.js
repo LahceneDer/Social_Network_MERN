@@ -43,16 +43,7 @@ router.delete('/:id', async (req, res) => {
     }
 } )
 
-// get a user
-router.get("/:id", async (req, res) => {
-    try {
-        const user = await User.findById(req.params.id)
-        const {password, updatedAt, ...other} = user._doc
-        res.status(200).json(other)
-    } catch (error) {
-        res.status(500).json(error)
-    }
-})
+
 
 // follow a user
 router.put("/:id/follow", async (req, res) => {
@@ -94,6 +85,19 @@ router.put("/:id/unfollow", async (req, res) => {
         }
     } else {
         res.status(500).json("You cannot unfollow yourself")
+    }
+})
+
+// get a user
+router.get("/", async (req, res) => {
+    const userId = req.query.userId
+    const username = req.query.username
+    try {
+        const user = userId ? await User.findById(userId) : await User.findOne({username:username})
+        const {password, updatedAt, ...other} = user._doc
+        res.status(200).json(other)
+    } catch (error) {
+        res.status(500).json(error)
     }
 })
 
