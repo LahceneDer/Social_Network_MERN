@@ -1,93 +1,92 @@
-.topbarContainer{
-    height:50px;
-    width:100%;
-    background-color: var(--main-bg-color);
-    display: flex;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index:999
+.topbarContainer {
+  height: 50px;
+  width: 100%;
+  background-color: var(--main-bg-color);
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .topbarLeft {
-    flex:3
+  flex: 3;
 }
 .topbarLeft .logo .Link {
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
-    color: white;
-    display: flex;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  color: white;
+  display: flex;
+  cursor: pointer;
 }
 
 .topbarCenter {
-    flex:5
+  flex: 5;
 }
 
 .topbarCenter .searchBar {
-    display: flex;
-    width: 100%;
-    background-color: white;
-    border-radius: 30px;
-    height: 30px;
-    align-items: center;
+  display: flex;
+  width: 100%;
+  background-color: white;
+  border-radius: 30px;
+  height: 30px;
+  align-items: center;
 }
 .topbarCenter .searchIcon {
-    order: 1;
-    flex-basis: 5%;
-    cursor: pointer;
+  order: 1;
+  flex-basis: 5%;
+  cursor: pointer;
 }
 .topbarCenter .searchInput {
-    order: 2;
-    flex-basis: 90%;
-    border: none;
-    height: 90%;
+  order: 2;
+  flex-basis: 90%;
+  border: none;
+  height: 90%;
 }
 .topbarCenter .searchInput:focus {
-    outline: none
-
+  outline: none;
 }
 
 .topbarRight {
-    flex:4;
-    display:flex;
-    align-items: center;
-    justify-content: space-around;
-    color: white;
+  flex: 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
 }
 .topbarRight .topBarLink {
-    margin-right: 20px;
-    cursor: pointer;
-    font-size: 17px;
-
+  margin-right: 20px;
+  cursor: pointer;
+  font-size: 17px;
 }
-.topBarIconItem{
-    margin-right: 15px;
-    cursor: pointer;
-    position: relative;
+.topBarIconItem {
+  margin-right: 15px;
+  cursor: pointer;
+  position: relative;
 }
 .topbarRight .topBarIcons {
-    display:flex;
-
+  display: flex;
 }
 
-.topBarIconBadge{
-    position: absolute;
-    background-color:#FF1818;
-    color: white;
-    border-radius: 50%;
-    top:-5px;
-    right:-5px;
-    height: 15px;
-    width: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 13px
-
+.topBarIconBadge {
+  position: absolute;
+  background-color: #ff1818;
+  color: white;
+  border-radius: 50%;
+  top: -5px;
+  right: -5px;
+  height: 15px;
+  width: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
 }
 
 .topbarProfilePic {
-    cursor: pointer;    
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
 }
